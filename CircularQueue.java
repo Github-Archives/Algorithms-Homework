@@ -2,14 +2,11 @@
  * Circular Queue- implemented using Queue.
  */
 class CircularQueue<E> {
-
     private E[] circularQueueAr;
     private int maxSize;   //Maximum Size of Circular Queue
-
     private int rear;//elements will be added/queued at rear.
     private int front;   //elements will be removed/dequeued from front      
     private int number; //number of elements currently in Priority Queue
-
     /**
      * Constructor
      */
@@ -20,8 +17,6 @@ class CircularQueue<E> {
         front=0;
         rear=0;
     }
-
-
 
     /**
      * Adds element in Circular Queue(at rear)
@@ -37,7 +32,6 @@ class CircularQueue<E> {
             number++; // increase number of elements in Circular queue
         }
     }
-
 
     /**
      * Removes element from Circular Queue(from front)
@@ -64,7 +58,6 @@ class CircularQueue<E> {
         return (number==circularQueueAr.length);
     }
 
-
     /**
      * Return true if Circular Queue is empty.
      */
@@ -77,6 +70,4 @@ class CircularQueue<E> {
             System.out.println(circularQueueAr[i]);
         }
     }
-
-
 }
